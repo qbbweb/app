@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>QBBGW</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+	</head>
+
+	<body>
+		<div class="header_wrap">
+			<div class="header">
+				<div class="logo"><img src="images/logo.png" /></div>
+				<div class="nav_wrap">
+					<div class="nav_piece has_downnav now">
+						<h1 onclick="javascript:window.location.href='index.html'">首页</h1>
+						
+					</div>
+
+					<div class="nav_piece has_downnav">
+						<h1>小鸟掌学<span class="xiajiantou_img"></span></h1>
+						<ul>
+							<li onclick="javascript:window.open('aboutxiaoniao.html')">小鸟掌学主页</li>
+							<li onclick="javascript:window.open('aboutxiaoniao.html#1')">小鸟掌学概述</li>
+							<li onclick="javascript:window.open('aboutxiaoniao.html#2')">对企业的阶值</li>
+							<li onclick="javascript:window.open('aboutxiaoniao.html#3')">小鸟掌云</li>
+							<li>微课联盟</li>
+							<li onclick="javascript:window.open('aboutxiaoniao.html#4')">App下载</li>
+						</ul>
+					</div>
+
+					<div class="nav_piece has_downnav">
+						<h1 onclick="javascript:window.open('list.html?type=xiaoniaoNews')">小鸟动态</h1>
+						
+					</div>
+
+					<div class="nav_piece has_downnav">
+						<h1>企业文化<span class="xiajiantou_img"></span></h1>
+						<ul>
+							<li onclick="javascript:window.open('article.html?type=companyIdea')">公司理念</li>
+							<li onclick="javascript:window.open('article.html?type=companyCulture')">公司文化</li>
+							<li onclick="javascript:window.open('article.html?type=companyEnvironment')">公司氛围</li>
+						</ul>
+					</div>
+					<div class="nav_piece has_downnav">
+						<h1>人力资源<span class="xiajiantou_img"></span></h1>
+						<ul>
+							<li onclick="javascript:window.open('article.html?type=talents')">人才理念</li>
+							<li onclick="javascript:window.open('article.html?type=team')">团队介绍</li>
+							<li onclick="javascript:window.open('article.html?type=joinUs')">招聘信息</li>
+						</ul>
+					</div>
+					<div class="nav_piece has_downnav">
+						<h1  onclick="javascript:window.open('article.html?type=talUs')">联系我们</h1>
+						
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/move.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".nav_piece").hover(function() {
+				$(this).find("ul").stop().slideDown(600, "elasticOut");
+			}, function() {
+				$(this).find("ul").stop().slideUp(100);
+			}).click(function() {
+				$(this).addClass("now").find("ul").hide().end().siblings().removeClass("now");
+			})
+		})
+	</script>
+
+</html>
