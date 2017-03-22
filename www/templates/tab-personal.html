@@ -1,0 +1,35 @@
+<ion-view view-title="登录" hide-nav-bar="true" style="background: url(img/login_bg.png)no-repeat;background-size: 100% 100%;">
+  <ion-content  ng-controller="PersonalCtrl">
+    <style type="text/css">
+    	.logo{width: 3rem;height: 3rem;margin: 0 auto;}
+    </style>
+
+    <div class="row responsive-sm padding">
+    	<div class="col">
+    		<div style="height: 1.5rem;"></div>
+    		<div class="logo">
+    			<img src="img/login_logo.png" width="100%" height="auto"/>
+    		</div>
+    		<div class="list list-inset">
+			  <label class="item item-input">
+			    <input type="text" placeholder="用户名" ng-model="loginuser.userName">
+			  </label>
+			  <label class="item item-input">
+			    <input type="password" placeholder="密码" ng-model="loginuser.userPwd" >
+			  </label>
+				</div>
+
+				<div class="loginButton" ng-click="dd()">
+					<button class="button button-block button-positive" ng-click="dlu(loginuser)">登录</button>
+				</div>
+
+				<div class="row">
+					<div class="col-10"><a class="item" style="background: none;border: none;padding-left: 0;" href="#/tab/register">注册</a></div>
+					<div class="col-10" style="text-align: right;line-height: 1.36rem;">忘记密码</div>
+
+				</div>
+    	</div>
+    </div>
+
+  </ion-content>
+</ion-view>

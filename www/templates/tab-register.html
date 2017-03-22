@@ -1,0 +1,35 @@
+<ion-view view-title="注册" style="background: url(img/register_bg.jpg)no-repeat;background-size: 100% 100%;">
+  <ion-content  ng-controller="RegisterCtrl">
+    
+    <div class="row responsive-sm padding">
+    	<div class="col">
+    		<div style="height: 1rem;"></div>
+    		<div style="text-align: center;color: #fff;font-size: 1rem;"></div>
+    	
+    
+    <div class="list list-inset" style="opacity: 0.5;">
+	  <label class="item item-input">
+	    <input type="text" placeholder="用户名" ng-model="inof.userName"> 
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="邮箱" ng-model="inof.email">
+	  </label>
+	   <label class="item item-input">
+	    <input type="text" placeholder="手机号码" ng-model="inof.phone">
+	  </label>
+	   <label class="item item-input">
+	    <input type="password" placeholder="密码" ng-model="inof.userPwd">
+	  </label>
+	  <label class="item item-input">
+	    <input type="password" placeholder="再次输入密码" ng-model="inof.userPwdt">
+	  </label>
+	</div>
+	
+	<div class="loginButton">
+		<button class="button button-block button-balanced" ng-click="pangduan(inof)">注册</button>
+	</div>
+	
+	</div>
+    </div>
+  </ion-content>
+</ion-view>
